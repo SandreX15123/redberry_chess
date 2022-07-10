@@ -1,38 +1,669 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+
+  /* box-sizing: border-box; */
+}
+/* landing page Css */
+#ULig {
+  display: flex;
+  align-items: center;
+  height: 84px;
+  width: 923px;
+  background-color: #7025fb;
+}
+#Lig {
+  position: absolute;
+  width: 923px;
+  height: 1196px;
+  left: 0px;
+  top: 84px;
+}
+#RLig {
+  position: absolute;
+  width: 997px;
+  height: 1280px;
+  left: 923px;
+  top: 0px;
+
+  background: #fd5334;
+}
+#Ligtxt {
+  /* Redberry Knight Cup */
+  width: 252.82px;
+  height: 23.35px;
+  margin-left: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Btxt {
+  position: absolute;
+  width: 496px;
+  height: 109px;
+  left: 1008px;
+  top: 265px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+#Btxt2 {
+  position: absolute;
+  width: 570px;
+  height: 109px;
+  left: 1008px;
+  top: 390px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Stxt {
+  position: absolute;
+  width: 136px;
+  height: 27px;
+  left: 1530px;
+  top: 306px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  color: #212529;
+}
+
+#B1C {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  position: absolute;
+  width: 191px;
+  height: 53px;
+  left: 1008px;
+  top: 601px;
+  padding: 13px, 24px, 13px, 24px;
+
+  background: #212529;
+  border-radius: 8px;
+}
+
+#B1Ctxt {
+  height: 27px;
+  width: 143px;
+  left: 24px;
+  top: 13px;
+  border-radius: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.getstarted {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  position: absolute;
+  width: 191px;
+  height: 53px;
+  left: 1008px;
+  top: 601px;
+  padding: 13px, 24px, 13px, 24px;
+
+  background: #212529;
+  border-radius: 8px;
+}
+
+.getstarted:hover {
+  background: #212529;
+  border: 4px solid rgba(194, 165, 249, 0.8);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* register css */
+
+#TopLine {
+  position: absolute;
+  width: 999px;
+  height: 0px;
+  left: 923px;
+  top: 84px;
+
+  border: 1px solid rgba(185, 180, 196, 0.3);
+}
+#TopText {
+  /* Start creating your account */
+
+  position: absolute;
+  width: 215px;
+  height: 24px;
+  left: 971px;
+  top: 30px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  text-transform: capitalize;
+
+  color: #212529;
+}
+#DefPer {
+  position: absolute;
+  width: 366px;
+  height: 65px;
+  left: 971px;
+  top: 144px;
+}
+
+#Personaltxt {
+  /* Personal information */
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 971px;
+  top: 324px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+  color: #000000;
+}
+
+#UnderPT {
+  /* This is basic informaton fields */
+  position: absolute;
+  width: 205px;
+  height: 21px;
+  left: 971px;
+  top: 375px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  text-transform: capitalize;
+
+  color: #95939a;
+}
+
+.container {
+  /* input field group */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 775px;
+  height: 304px;
+  left: 971px;
+  top: 481px;
+}
+
+.input-field {
+  /* Input field */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 16px;
+
+  width: 775px;
+  height: 46px;
+
+  /* Gray/White */
+
+  background: #ffffff;
+  /* Border & Divider/divider ↓ */
+
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.input-field input {
+  /* content
+
+Paragraph text
+*/
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 743px;
+  height: 30px;
+  border: #ccc;
+  outline: none;
+  /* HitBox */
+
+  background: rgba(255, 255, 255, 1e-6);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* button Next */
+.next {
+  /* Frame 10 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 128px;
+  height: 53px;
+  left: 1618px;
+  top: 873px;
+
+  background: #212529;
+  border-radius: 8px;
+}
+
+.next:hover {
+  cursor: pointer;
+  background: #212529;
+  border: 4px solid rgba(194, 165, 249, 0.8);
+  border-radius: 8px;
+}
+
+#B2Ctext {
+  /* Frame 1 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  width: 80px;
+  height: 27px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Back {
+  /* Button */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 93px;
+  height: 53px;
+  left: 971px;
+  top: 873px;
+
+  border: 1px solid #212529;
+  border-radius: 8px;
+}
+.Back:hover {
+  background: rgba(185, 180, 196, 0.3);
+  border: 1px solid rgba(194, 165, 249, 0.8);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#BackBtn {
+  /* Back */
+
+  width: 45px;
+  height: 27px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  color: #212529;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.block {
+  /* toast */
+
+  /* Auto layout */
+
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 350px;
+  height: 95px;
+  left: 1531px;
+  top: 226px;
+
+  /* _Components/Toasts/Background */
+  background: rgba(255, 255, 255, 0.85);
+  /* _Components/Toasts/Border */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* _Components/Toasts/Shadow */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+#blocktxt {
+  /* title */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  width: 272px;
+  height: 21px;
+  background: rgba(255, 255, 255, 1e-6);
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: #dc3545;
+}
+
+#blockUP {
+  /* header */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 6px 8px 12px;
+  gap: 8px;
+
+  width: 350px;
+  height: 39px;
+
+  /* _Components/Toasts/Background */
+
+  background: rgba(255, 255, 255, 0.85);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#redsign {
+  /* Icon / Filled / ExclamationCircle */
+  width: 20px;
+  height: 20px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#justX1,
+#justX2,
+#justX3,
+#justX4 {
+  /* x */
+  width: 23px;
+  height: 23px;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+#blockLine {
+  /* line */
+  width: 350px;
+  height: 0px;
+  opacity: 0.05;
+  /* Gray/Black */
+  border: 1px solid #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+#blockBody {
+  /* body */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+
+  width: 350px;
+  height: 48px;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+#blockBodytxt {
+  /* text */
+  width: 326px;
+  height: 24px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  color: #212529;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* Last part */
+#onBoard {
+  /* Onboarding completed! */
+
+  /* Auto layout */
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 402px;
+  height: 260.65px;
+  left: 1201px;
+  top: 416px;
 }
 
-.App-link {
-  color: #61dafb;
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#scrolltxt {
+  /* text */
+
+  width: 312px;
+  height: 30px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  /* Gray/900 */
+
+  color: #212529;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#scroll2 {
+  /* Input field */
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 1376px;
+  top: 491px;
+
+  /* Gray/White */
+
+  background: #ffffff;
+  /* Border & Divider/divider ↓ */
+
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+}
+
+#dropbox1 {
+  /* Frame 23 */
+  position: absolute;
+  width: 392px;
+  height: 199px;
+  left: 971px;
+  top: 541px;
 }
